@@ -2,12 +2,26 @@
 Interface of my current project. It is a work-in progress, and the code will be uploaded here when I launch its first version.
 # Features
 1. **Incoming Package**
-    - Creates new incoming package for products. 
+    - Creates new incoming package for products.
       - Registers transportation fees, currency exchange, transportation type, and receiving date.
-      - Individual product fields: Name, Description, Quantity, Store, Department, Gender, Size, Price paid (in foreign currency), Price for sale (if known).
-    -Upon completing the package, program will go through each product, and if Price for sale was not entered, the program will calculate the standard expected profit based on the Price paid. 
+      - Adding Individual products (it allows the user to select an existing product in the database and add it to new package, or create new entry): 
+        - Name 
+        - Description
+        - Quantity
+        - Store (Purchased at)
+        - Department (e.g. Pharmacy, Toys, Clothing, etc.)
+        - Gender
+        - Size
+        - Price paid (in foreign currency)
+        - Price for sale (if known). If left 0.00, the program will automatically set Price for sale based on a preset profit magin based on Price paid.
 2. **Database View**
     - View all existing products.
+        - All fields listed above.
+        - Details for pricing 
+            - Paid in foreign and national currency
+            - Transportation fees
+            - Taxes
+            - Final price
     - Allows for Product editing (e.g. Details like name and description, price for sale, quantity, etc.)
     - Register sale
       - Keep track of payment method and adjusts price if fee for credit card payment is applicable. 
