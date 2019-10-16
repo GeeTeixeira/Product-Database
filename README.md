@@ -1,5 +1,5 @@
 # Product Database
-Interface of my current project. It is a work-in progress, and the code will be uploaded here when I launch its first version.
+Interface of my current project. It is a work-in progress, and the code may be uploaded here when I launch its first version.
 # Features
 1. **Incoming Package**
     - Creates new incoming package for products.
